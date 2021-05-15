@@ -1,0 +1,6 @@
+framework module Pods_AppScreenNavigation {
+  umbrella header "Pods-AppScreenNavigation-umbrella.h"
+
+  export *
+  module * { export * }
+}
