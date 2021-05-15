@@ -45,9 +45,3 @@ extension ScheduleCoordinator {
     })
   }
 }
-
-extension Observable {
-  func mapTo<Result>(_ value: Result) -> Observable<Result> {
-    map { _ in value }
-  }
-}

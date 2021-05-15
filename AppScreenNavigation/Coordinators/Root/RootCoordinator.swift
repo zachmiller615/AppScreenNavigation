@@ -5,6 +5,7 @@ class RootCoordinator {
   // MARK: - Properties
   private let dependencyManager: RootDependencyManager
   private let router: WindowRouter
+  private let disposeBag = DisposeBag()
 
   private var scheduleCoordinator: ScheduleCoordinator?
 
@@ -15,8 +16,8 @@ class RootCoordinator {
   }
 
   // MARK: - Methods
-  func start() -> Observable<Void> {
-    navigateToLogin()
+  func start() {
+    navigateToLogin().subscribe().disposed(by: disposeBag)
   }
 }
 

@@ -16,7 +16,3 @@ struct SettingsViewModel {
     """
   }
 }
-
-struct SettingsModel {
-  let chosenNumber: Int
-}
