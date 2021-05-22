@@ -1,5 +1,10 @@
 enum UIFlowEvent {
-  case loginScreen(LoginScreenResult)
-  case scheduleScreen(ScheduleScreenResult)
-  case settingsScreen(SettingsScreenResult)
+  case backgroundEvent(BackgroundEvent)
+  case loginScreen(LoginScreen.Result)
+  case scheduleScreen(ScheduleScreen.Result)
+  case settingsScreen(SettingsScreen.Result)
+}
+
+enum BackgroundEvent {
+  case didReceiveDeepLink
 }

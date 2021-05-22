@@ -10,6 +10,19 @@
 		159316089A1B0B7699432394 /* Pods_AppScreenNavigationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F96A6A35A3D2559CC13DD7 /* Pods_AppScreenNavigationTests.framework */; };
 		23F3F97F67701475EC9DD343 /* Pods_AppScreenNavigation_AppScreenNavigationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E44C2846D6FCB407030BB48 /* Pods_AppScreenNavigation_AppScreenNavigationUITests.framework */; };
 		335F73885894182564B32B90 /* Pods_AppScreenNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEDA1A19398108305869EBE /* Pods_AppScreenNavigation.framework */; };
+		62056A2E2658EBA5008ADC7A /* UIFlowEventInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A2D2658EBA5008ADC7A /* UIFlowEventInitializable.swift */; };
+		62056A332658ED35008ADC7A /* UIFlowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A322658ED35008ADC7A /* UIFlowEvent.swift */; };
+		62056A382658ED51008ADC7A /* UIFlowCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A372658ED51008ADC7A /* UIFlowCommand.swift */; };
+		62056A3D2658ED6B008ADC7A /* UIFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A3C2658ED6B008ADC7A /* UIFlowScreen.swift */; };
+		62056A422658ED92008ADC7A /* UIFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A412658ED92008ADC7A /* UIFlowRouter.swift */; };
+		62056A472658EDAA008ADC7A /* UIFlowStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A462658EDAA008ADC7A /* UIFlowStateMachine.swift */; };
+		62056A4C2658EDD8008ADC7A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A4B2658EDD8008ADC7A /* LoginScreen.swift */; };
+		62056A512658EDF3008ADC7A /* ScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A502658EDF3008ADC7A /* ScheduleScreen.swift */; };
+		62056A562658EE0A008ADC7A /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A552658EE0A008ADC7A /* SettingsScreen.swift */; };
+		62056A5B2658EE24008ADC7A /* SettingsScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A5A2658EE24008ADC7A /* SettingsScreenReducer.swift */; };
+		62056A602658EE39008ADC7A /* ScheduleScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A5F2658EE39008ADC7A /* ScheduleScreenReducer.swift */; };
+		62056A652658EE4D008ADC7A /* LoginScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A642658EE4D008ADC7A /* LoginScreenReducer.swift */; };
+		62056A6A2658EE60008ADC7A /* UIFlowReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62056A692658EE60008ADC7A /* UIFlowReducer.swift */; };
 		6286550D264FAA12007CDC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286550C264FAA12007CDC76 /* AppDelegate.swift */; };
 		62865516264FAA13007CDC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62865515264FAA13007CDC76 /* Assets.xcassets */; };
 		62865519264FAA13007CDC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62865517264FAA13007CDC76 /* LaunchScreen.storyboard */; };
@@ -22,25 +35,11 @@
 		62865571264FB638007CDC76 /* LoginDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62865570264FB638007CDC76 /* LoginDependencyManager.swift */; };
 		6286557C264FB6F6007CDC76 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286557B264FB6F6007CDC76 /* Router.swift */; };
 		62865581264FD244007CDC76 /* RootDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62865580264FD244007CDC76 /* RootDependencyManager.swift */; };
-		62B1DCC326503FE20031898B /* UIFlowDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCC226503FE20031898B /* UIFlowDirector.swift */; };
-		62B1DCC82650402F0031898B /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCC72650402F0031898B /* StateMachine.swift */; };
-		62B1DCD2265042AA0031898B /* UIFlowReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCD1265042AA0031898B /* UIFlowReducer.swift */; };
-		62B1DCD7265045D10031898B /* UIFlowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCD6265045D10031898B /* UIFlowScreen.swift */; };
-		62B1DCDC265046030031898B /* UIFlowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCDB265046030031898B /* UIFlowEvent.swift */; };
 		62B1DCE4265048400031898B /* SettingsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCE3265048400031898B /* SettingsViewController2.swift */; };
 		62B1DCE92650484F0031898B /* ScheduleViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCE82650484F0031898B /* ScheduleViewController2.swift */; };
 		62B1DCEE2650485A0031898B /* LoginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCED2650485A0031898B /* LoginViewController2.swift */; };
 		62B1DCF3265048B60031898B /* Observable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCF2265048B60031898B /* Observable+Additions.swift */; };
 		62B1DCF82650494F0031898B /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCF72650494F0031898B /* SettingsModel.swift */; };
-		62B1DCFD26504A5E0031898B /* LoginScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DCFC26504A5E0031898B /* LoginScreenReducer.swift */; };
-		62B1DD0226504AAA0031898B /* ScheduleScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD0126504AAA0031898B /* ScheduleScreenReducer.swift */; };
-		62B1DD0726504B1D0031898B /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD0626504B1D0031898B /* SettingsReducer.swift */; };
-		62B1DD0C26504FC40031898B /* UIFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD0B26504FC40031898B /* UIFlowRouter.swift */; };
-		62B1DD112650518A0031898B /* UIFlowDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD102650518A0031898B /* UIFlowDependencyManager.swift */; };
-		62B1DD20265059FB0031898B /* LoginScreenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD1F265059FB0031898B /* LoginScreenResult.swift */; };
-		62B1DD2526505A250031898B /* ScheduleScreenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD2426505A250031898B /* ScheduleScreenResult.swift */; };
-		62B1DD2A26505A300031898B /* SettingsScreenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD2926505A300031898B /* SettingsScreenResult.swift */; };
-		62B1DD3F26506E910031898B /* UIFlowBaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B1DD3E26506E910031898B /* UIFlowBaseTypes.swift */; };
 		62B8797D264FDC860011CFCF /* ScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8797C264FDC860011CFCF /* ScheduleCoordinator.swift */; };
 		62B87982264FDCA10011CFCF /* ScheduleDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B87981264FDCA10011CFCF /* ScheduleDependencyManager.swift */; };
 		62B87987264FDCBE0011CFCF /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B87986264FDCBE0011CFCF /* ScheduleViewController.swift */; };
@@ -50,6 +49,11 @@
 		62B8799C264FE22B0011CFCF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8799B264FE22B0011CFCF /* SettingsViewController.swift */; };
 		62B879A1264FE2420011CFCF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B879A0264FE2420011CFCF /* SettingsView.swift */; };
 		62B879A6264FE4620011CFCF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B879A5264FE4620011CFCF /* SettingsViewModel.swift */; };
+		AA4F7060D49B6436DBF1631E /* ScheduleScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7E9AE9B699B0859609CA /* ScheduleScreenDependencyManager.swift */; };
+		AA4F70E9170489FA57E40F88 /* SettingsScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7BCEF651EB95F18DCA31 /* SettingsScreenDependencyManager.swift */; };
+		AA4F7334C5B474CD16E561C8 /* UIFlowDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */; };
+		AA4F7BEBDDA48F3C605FD74F /* UIFlowDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */; };
+		AA4F7F52E85AC80283A70CF3 /* LoginScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F726254C19A198199E0A2 /* LoginScreenDependencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,19 @@
 		3BDB8440840BD79774E032B3 /* Pods-AppScreenNavigationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigationTests.release.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigationTests/Pods-AppScreenNavigationTests.release.xcconfig"; sourceTree = "<group>"; };
 		46E8C8C2007DCFE46D6545BC /* Pods-AppScreenNavigation-AppScreenNavigationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigation-AppScreenNavigationUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigation-AppScreenNavigationUITests/Pods-AppScreenNavigation-AppScreenNavigationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E44C2846D6FCB407030BB48 /* Pods_AppScreenNavigation_AppScreenNavigationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppScreenNavigation_AppScreenNavigationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62056A2D2658EBA5008ADC7A /* UIFlowEventInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowEventInitializable.swift; sourceTree = "<group>"; };
+		62056A322658ED35008ADC7A /* UIFlowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowEvent.swift; sourceTree = "<group>"; };
+		62056A372658ED51008ADC7A /* UIFlowCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowCommand.swift; sourceTree = "<group>"; };
+		62056A3C2658ED6B008ADC7A /* UIFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowScreen.swift; sourceTree = "<group>"; };
+		62056A412658ED92008ADC7A /* UIFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowRouter.swift; sourceTree = "<group>"; };
+		62056A462658EDAA008ADC7A /* UIFlowStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowStateMachine.swift; sourceTree = "<group>"; };
+		62056A4B2658EDD8008ADC7A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		62056A502658EDF3008ADC7A /* ScheduleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScreen.swift; sourceTree = "<group>"; };
+		62056A552658EE0A008ADC7A /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		62056A5A2658EE24008ADC7A /* SettingsScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenReducer.swift; sourceTree = "<group>"; };
+		62056A5F2658EE39008ADC7A /* ScheduleScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScreenReducer.swift; sourceTree = "<group>"; };
+		62056A642658EE4D008ADC7A /* LoginScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenReducer.swift; sourceTree = "<group>"; };
+		62056A692658EE60008ADC7A /* UIFlowReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowReducer.swift; sourceTree = "<group>"; };
 		62865509264FAA12007CDC76 /* AppScreenNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppScreenNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6286550C264FAA12007CDC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62865515264FAA13007CDC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,25 +110,11 @@
 		62865570264FB638007CDC76 /* LoginDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependencyManager.swift; sourceTree = "<group>"; };
 		6286557B264FB6F6007CDC76 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		62865580264FD244007CDC76 /* RootDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDependencyManager.swift; sourceTree = "<group>"; };
-		62B1DCC226503FE20031898B /* UIFlowDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowDirector.swift; sourceTree = "<group>"; };
-		62B1DCC72650402F0031898B /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
-		62B1DCD1265042AA0031898B /* UIFlowReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowReducer.swift; sourceTree = "<group>"; };
-		62B1DCD6265045D10031898B /* UIFlowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowScreen.swift; sourceTree = "<group>"; };
-		62B1DCDB265046030031898B /* UIFlowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowEvent.swift; sourceTree = "<group>"; };
 		62B1DCE3265048400031898B /* SettingsViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController2.swift; sourceTree = "<group>"; };
 		62B1DCE82650484F0031898B /* ScheduleViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController2.swift; sourceTree = "<group>"; };
 		62B1DCED2650485A0031898B /* LoginViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController2.swift; sourceTree = "<group>"; };
 		62B1DCF2265048B60031898B /* Observable+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Additions.swift"; sourceTree = "<group>"; };
 		62B1DCF72650494F0031898B /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		62B1DCFC26504A5E0031898B /* LoginScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenReducer.swift; sourceTree = "<group>"; };
-		62B1DD0126504AAA0031898B /* ScheduleScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScreenReducer.swift; sourceTree = "<group>"; };
-		62B1DD0626504B1D0031898B /* SettingsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
-		62B1DD0B26504FC40031898B /* UIFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowRouter.swift; sourceTree = "<group>"; };
-		62B1DD102650518A0031898B /* UIFlowDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowDependencyManager.swift; sourceTree = "<group>"; };
-		62B1DD1F265059FB0031898B /* LoginScreenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenResult.swift; sourceTree = "<group>"; };
-		62B1DD2426505A250031898B /* ScheduleScreenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScreenResult.swift; sourceTree = "<group>"; };
-		62B1DD2926505A300031898B /* SettingsScreenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenResult.swift; sourceTree = "<group>"; };
-		62B1DD3E26506E910031898B /* UIFlowBaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFlowBaseTypes.swift; sourceTree = "<group>"; };
 		62B8797C264FDC860011CFCF /* ScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCoordinator.swift; sourceTree = "<group>"; };
 		62B87981264FDCA10011CFCF /* ScheduleDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDependencyManager.swift; sourceTree = "<group>"; };
 		62B87986264FDCBE0011CFCF /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +126,11 @@
 		62B879A5264FE4620011CFCF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		6C624C26A7A6EB52AACA4A88 /* Pods-AppScreenNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigation.release.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigation/Pods-AppScreenNavigation.release.xcconfig"; sourceTree = "<group>"; };
 		7E9FE7AB4BD1BE2D55624222 /* Pods-AppScreenNavigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigationTests.debug.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigationTests/Pods-AppScreenNavigationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4F726254C19A198199E0A2 /* LoginScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenDependencyManager.swift; sourceTree = "<group>"; };
+		AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowDirector.swift; sourceTree = "<group>"; };
+		AA4F7BCEF651EB95F18DCA31 /* SettingsScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreenDependencyManager.swift; sourceTree = "<group>"; };
+		AA4F7E9AE9B699B0859609CA /* ScheduleScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleScreenDependencyManager.swift; sourceTree = "<group>"; };
+		AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowDependencyManager.swift; sourceTree = "<group>"; };
 		B89190FD8756454FD97BCCFE /* Pods-AppScreenNavigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigation.debug.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigation/Pods-AppScreenNavigation.debug.xcconfig"; sourceTree = "<group>"; };
 		BDEF17F57E4D2BEBA7B15B2A /* Pods-AppScreenNavigation-AppScreenNavigationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigation-AppScreenNavigationUITests.release.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigation-AppScreenNavigationUITests/Pods-AppScreenNavigation-AppScreenNavigationUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,14 +271,15 @@
 		62B1DCBE26503E6A0031898B /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				62B1DCC226503FE20031898B /* UIFlowDirector.swift */,
-				62B1DD3E26506E910031898B /* UIFlowBaseTypes.swift */,
-				62B1DD102650518A0031898B /* UIFlowDependencyManager.swift */,
-				62B1DD0B26504FC40031898B /* UIFlowRouter.swift */,
-				62B1DCD1265042AA0031898B /* UIFlowReducer.swift */,
-				62B1DCD6265045D10031898B /* UIFlowScreen.swift */,
-				62B1DCDB265046030031898B /* UIFlowEvent.swift */,
-				62B1DCC72650402F0031898B /* StateMachine.swift */,
+				62056A2D2658EBA5008ADC7A /* UIFlowEventInitializable.swift */,
+				62056A322658ED35008ADC7A /* UIFlowEvent.swift */,
+				62056A692658EE60008ADC7A /* UIFlowReducer.swift */,
+				62056A372658ED51008ADC7A /* UIFlowCommand.swift */,
+				62056A3C2658ED6B008ADC7A /* UIFlowScreen.swift */,
+				62056A412658ED92008ADC7A /* UIFlowRouter.swift */,
+				62056A462658EDAA008ADC7A /* UIFlowStateMachine.swift */,
+				AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */,
+				AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -279,8 +288,9 @@
 			isa = PBXGroup;
 			children = (
 				62B1DCED2650485A0031898B /* LoginViewController2.swift */,
-				62B1DD1F265059FB0031898B /* LoginScreenResult.swift */,
-				62B1DCFC26504A5E0031898B /* LoginScreenReducer.swift */,
+				62056A4B2658EDD8008ADC7A /* LoginScreen.swift */,
+				62056A642658EE4D008ADC7A /* LoginScreenReducer.swift */,
+				AA4F726254C19A198199E0A2 /* LoginScreenDependencyManager.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -289,8 +299,9 @@
 			isa = PBXGroup;
 			children = (
 				62B1DCE82650484F0031898B /* ScheduleViewController2.swift */,
-				62B1DD0126504AAA0031898B /* ScheduleScreenReducer.swift */,
-				62B1DD2426505A250031898B /* ScheduleScreenResult.swift */,
+				62056A502658EDF3008ADC7A /* ScheduleScreen.swift */,
+				62056A5F2658EE39008ADC7A /* ScheduleScreenReducer.swift */,
+				AA4F7E9AE9B699B0859609CA /* ScheduleScreenDependencyManager.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -299,8 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				62B1DCE3265048400031898B /* SettingsViewController2.swift */,
-				62B1DD0626504B1D0031898B /* SettingsReducer.swift */,
-				62B1DD2926505A300031898B /* SettingsScreenResult.swift */,
+				62056A552658EE0A008ADC7A /* SettingsScreen.swift */,
+				62056A5A2658EE24008ADC7A /* SettingsScreenReducer.swift */,
+				AA4F7BCEF651EB95F18DCA31 /* SettingsScreenDependencyManager.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -589,42 +601,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62056A652658EE4D008ADC7A /* LoginScreenReducer.swift in Sources */,
+				62056A382658ED51008ADC7A /* UIFlowCommand.swift in Sources */,
 				6286557C264FB6F6007CDC76 /* Router.swift in Sources */,
-				62B1DD2526505A250031898B /* ScheduleScreenResult.swift in Sources */,
+				62056A4C2658EDD8008ADC7A /* LoginScreen.swift in Sources */,
+				62056A422658ED92008ADC7A /* UIFlowRouter.swift in Sources */,
 				62B87982264FDCA10011CFCF /* ScheduleDependencyManager.swift in Sources */,
+				62056A562658EE0A008ADC7A /* SettingsScreen.swift in Sources */,
 				62B1DCF3265048B60031898B /* Observable+Additions.swift in Sources */,
-				62B1DD20265059FB0031898B /* LoginScreenResult.swift in Sources */,
 				62B87992264FE20F0011CFCF /* SettingsCoordinator.swift in Sources */,
 				62B8797D264FDC860011CFCF /* ScheduleCoordinator.swift in Sources */,
 				6286556C264FB5E0007CDC76 /* LoginView.swift in Sources */,
 				62B87997264FE2200011CFCF /* SettingsDependencyManager.swift in Sources */,
 				62B1DCE92650484F0031898B /* ScheduleViewController2.swift in Sources */,
-				62B1DD112650518A0031898B /* UIFlowDependencyManager.swift in Sources */,
 				6286550D264FAA12007CDC76 /* AppDelegate.swift in Sources */,
-				62B1DD0726504B1D0031898B /* SettingsReducer.swift in Sources */,
+				62056A472658EDAA008ADC7A /* UIFlowStateMachine.swift in Sources */,
 				62B8798C264FDCD00011CFCF /* ScheduleView.swift in Sources */,
 				62B879A6264FE4620011CFCF /* SettingsViewModel.swift in Sources */,
-				62B1DCD2265042AA0031898B /* UIFlowReducer.swift in Sources */,
-				62B1DD0C26504FC40031898B /* UIFlowRouter.swift in Sources */,
-				62B1DCC82650402F0031898B /* StateMachine.swift in Sources */,
-				62B1DCC326503FE20031898B /* UIFlowDirector.swift in Sources */,
+				62056A602658EE39008ADC7A /* ScheduleScreenReducer.swift in Sources */,
 				62B8799C264FE22B0011CFCF /* SettingsViewController.swift in Sources */,
+				62056A5B2658EE24008ADC7A /* SettingsScreenReducer.swift in Sources */,
+				62056A512658EDF3008ADC7A /* ScheduleScreen.swift in Sources */,
+				62056A332658ED35008ADC7A /* UIFlowEvent.swift in Sources */,
 				62B879A1264FE2420011CFCF /* SettingsView.swift in Sources */,
 				62B1DCE4265048400031898B /* SettingsViewController2.swift in Sources */,
 				62865581264FD244007CDC76 /* RootDependencyManager.swift in Sources */,
-				62B1DCFD26504A5E0031898B /* LoginScreenReducer.swift in Sources */,
 				62B1DCF82650494F0031898B /* SettingsModel.swift in Sources */,
-				62B1DD0226504AAA0031898B /* ScheduleScreenReducer.swift in Sources */,
 				62865559264FB4B6007CDC76 /* RootCoordinator.swift in Sources */,
+				62056A3D2658ED6B008ADC7A /* UIFlowScreen.swift in Sources */,
+				62056A2E2658EBA5008ADC7A /* UIFlowEventInitializable.swift in Sources */,
 				62865562264FB519007CDC76 /* LoginCoordinator.swift in Sources */,
-				62B1DD2A26505A300031898B /* SettingsScreenResult.swift in Sources */,
-				62B1DCDC265046030031898B /* UIFlowEvent.swift in Sources */,
-				62B1DD3F26506E910031898B /* UIFlowBaseTypes.swift in Sources */,
 				62865571264FB638007CDC76 /* LoginDependencyManager.swift in Sources */,
-				62B1DCD7265045D10031898B /* UIFlowScreen.swift in Sources */,
+				62056A6A2658EE60008ADC7A /* UIFlowReducer.swift in Sources */,
 				62B1DCEE2650485A0031898B /* LoginViewController2.swift in Sources */,
 				62B87987264FDCBE0011CFCF /* ScheduleViewController.swift in Sources */,
 				62865567264FB5B2007CDC76 /* LoginViewController.swift in Sources */,
+				AA4F7334C5B474CD16E561C8 /* UIFlowDirector.swift in Sources */,
+				AA4F7BEBDDA48F3C605FD74F /* UIFlowDependencyManager.swift in Sources */,
+				AA4F7F52E85AC80283A70CF3 /* LoginScreenDependencyManager.swift in Sources */,
+				AA4F7060D49B6436DBF1631E /* ScheduleScreenDependencyManager.swift in Sources */,
+				AA4F70E9170489FA57E40F88 /* SettingsScreenDependencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

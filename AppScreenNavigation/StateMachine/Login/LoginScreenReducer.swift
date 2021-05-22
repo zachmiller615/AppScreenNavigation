@@ -1,8 +1,9 @@
 struct LoginScreenReducer {
-  static func transition(from result: LoginScreenResult) -> UIFlowState {
+  static func transition(from result: LoginScreen.Result) -> [UIFlowCommand] {
     switch result {
     case .didTapLoginButton:
-      return UIFlowState(screen: .schedule, segue: .setRoot)
+      let scheduleScreen = ScheduleScreen()
+      return [.setRoot(scheduleScreen)]
     }
   }
 }

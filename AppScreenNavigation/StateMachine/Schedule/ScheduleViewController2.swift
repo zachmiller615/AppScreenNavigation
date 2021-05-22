@@ -1,16 +1,16 @@
 import UIKit
 import RxSwift
 
-class ScheduleViewController2: UIViewController, UIFlowScreenFinishable {
+class ScheduleViewController2: UIViewController {
   // MARK: - Properties
   private let scheduleView = ScheduleView()
 
-  let disposeBag = DisposeBag()
+  var didTapButton1: Observable<Void> {
+    scheduleView.rx.didTapButton1
+  }
 
-  var didFinish: Observable<ScheduleScreenResult> {
-    let didTapButton1 = scheduleView.rx.didTapButton1.mapTo(ScheduleScreenResult.didTapButton1)
-    let didTapButton2 = scheduleView.rx.didTapButton2.mapTo(ScheduleScreenResult.didTapButton2)
-    return Observable.merge(didTapButton1, didTapButton2)
+  var didTapButton2: Observable<Void> {
+    scheduleView.rx.didTapButton2
   }
 
   // MARK: - Methods

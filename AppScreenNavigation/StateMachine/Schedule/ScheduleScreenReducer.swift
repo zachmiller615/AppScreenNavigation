@@ -1,12 +1,14 @@
 struct ScheduleScreenReducer {
-  static func transition(from result: ScheduleScreenResult) -> UIFlowState {
+  static func transition(from result: ScheduleScreen.Result) -> [UIFlowCommand] {
     switch result {
     case .didTapButton1:
-      let model = SettingsModel(chosenNumber: 1)
-      return UIFlowState(screen: .settings(model), segue: .present)
+      let settingsModel = SettingsModel(chosenNumber: 1)
+      let settingsScreen = SettingsScreen(model: settingsModel)
+      return [.present(settingsScreen)]
     case .didTapButton2:
-      let model = SettingsModel(chosenNumber: 2)
-      return UIFlowState(screen: .settings(model), segue: .present)
+      let settingsModel = SettingsModel(chosenNumber: 2)
+      let settingsScreen = SettingsScreen(model: settingsModel)
+      return [.present(settingsScreen)]
     }
   }
 }

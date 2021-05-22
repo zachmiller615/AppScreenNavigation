@@ -1,21 +1,34 @@
-typealias UIFlowStateMachine = StateMachine<UIFlowReducer>
-
-struct UIFlowReducer: Reducer {
-  static func transition(from currentState: UIFlowState, with event: UIFlowEvent) -> UIFlowState {
-    let newState: UIFlowState
-    switch (event, currentState.screen) {
+struct UIFlowReducer {
+  static func transition(from currentScreen: UIFlowScreen, with event: UIFlowEvent) -> [UIFlowCommand] {
+    let commands: [UIFlowCommand]
+    switch (event, currentScreen.identifier) {
+    case (let .backgroundEvent(backgroundEvent), _):
+      commands = BackgroundEventReducer.transition(from: backgroundEvent)
     case (let .loginScreen(result), .login):
-      newState = LoginScreenReducer.transition(from: result)
+      commands = LoginScreenReducer.transition(from : result)
     case (let .scheduleScreen(result), .schedule):
-      newState = ScheduleScreenReducer.transition(from: result)
+      commands = ScheduleScreenReducer.transition(from : result)
     case (let .settingsScreen(result), .settings):
-      newState = SettingsScreenReducer.transition(from: result)
+      commands = SettingsScreenReducer.transition(from : result)
     default:
-      newState = currentState
+      print("Unexpected code path")
+      commands = []
     }
     print("Event: \(event)")
-    print("Current State: \(currentState)")
-    print("New State: \(newState)")
-    return newState
+    print("Current Screen: \(currentScreen)")
+    print("Commands: \(commands)")
+    print("\n")
+    return commands
+  }
+}
+
+struct BackgroundEventReducer {
+  static func transition(from backgroundEvent: BackgroundEvent) -> [UIFlowCommand] {
+    switch backgroundEvent {
+    case .didReceiveDeepLink:
+      let settingsModel = SettingsModel(chosenNumber: 3)
+      let settingsScreen = SettingsScreen(model: settingsModel)
+      return [.popToRoot, .present(settingsScreen)]
+    }
   }
 }

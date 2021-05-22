@@ -1,14 +1,12 @@
 import UIKit
 import RxSwift
 
-class LoginViewController2: UIViewController, UIFlowScreenFinishable {
+class LoginViewController2: UIViewController {
   // MARK: - Properties
   private let loginView = LoginView()
 
-  let disposeBag = DisposeBag()
-
-  var didFinish: Observable<LoginScreenResult> {
-    loginView.rx.didTapLoginButton.mapTo(.didTapLoginButton)
+  var didTapLoginButton: Observable<Void> {
+    loginView.rx.didTapLoginButton
   }
 
   // MARK: - Methods

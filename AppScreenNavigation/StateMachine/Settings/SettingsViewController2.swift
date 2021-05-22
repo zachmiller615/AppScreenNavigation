@@ -1,15 +1,13 @@
 import UIKit
 import RxSwift
 
-class SettingsViewController2: UIViewController, UIFlowScreenFinishable {
+class SettingsViewController2: UIViewController {
   // MARK: - Properties
   private let settingsView = SettingsView()
   private let viewModel: SettingsViewModel
 
-  let disposeBag = DisposeBag()
-
-  var didFinish: Observable<SettingsScreenResult> {
-    settingsView.rx.didTapBackButton.mapTo(.didTapBackButton)
+  var didTapBackButton: Observable<Void> {
+    settingsView.rx.didTapBackButton
   }
 
   // MARK: - Initializer

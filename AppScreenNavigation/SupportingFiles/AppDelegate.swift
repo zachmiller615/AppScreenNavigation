@@ -1,5 +1,4 @@
 import UIKit
-import RxSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = window
     return UIFlowDependencyManager().createUIFlowDirector(with: window)
   }()
-
-  private let disposeBag = DisposeBag()
 
   // MARK: - Methods
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
