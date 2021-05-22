@@ -9,10 +9,10 @@ struct SettingsViewModel {
 
   // MARK: - Outputs to View Controller
   var title: String {
-    """
-    Settings Screen
-
-    Chosen number is: \(model.chosenNumber)
-    """
+    if model.chosenNumber == 3 {
+      return "DID RECEIVE DEEP LINK"
+    } else {
+      return "Chosen number is: \(model.chosenNumber)"
+    }
   }
 }

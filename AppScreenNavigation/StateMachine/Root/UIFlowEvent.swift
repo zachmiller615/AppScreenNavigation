@@ -4,7 +4,3 @@ enum UIFlowEvent {
   case scheduleScreen(ScheduleScreen.Result)
   case settingsScreen(SettingsScreen.Result)
 }
-
-enum BackgroundEvent {
-  case didReceiveDeepLink
-}

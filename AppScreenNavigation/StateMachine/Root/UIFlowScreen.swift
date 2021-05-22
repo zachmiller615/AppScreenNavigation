@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-protocol UIFlowScreen {
+protocol UIFlowScreen: AnyObject {
   var identifier: UIFlowScreenIdentifier { get }
   var viewController: UIViewController { get }
   var didFinish: Observable<UIFlowEventInitializable> { get }

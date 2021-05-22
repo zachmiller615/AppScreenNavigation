@@ -51,7 +51,10 @@
 		62B879A6264FE4620011CFCF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B879A5264FE4620011CFCF /* SettingsViewModel.swift */; };
 		AA4F7060D49B6436DBF1631E /* ScheduleScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7E9AE9B699B0859609CA /* ScheduleScreenDependencyManager.swift */; };
 		AA4F70E9170489FA57E40F88 /* SettingsScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7BCEF651EB95F18DCA31 /* SettingsScreenDependencyManager.swift */; };
-		AA4F7334C5B474CD16E561C8 /* UIFlowDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */; };
+		AA4F738FB3F4C6FD62331365 /* BackgroundEventReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7478C48FD9800DB0E8A2 /* BackgroundEventReducer.swift */; };
+		AA4F7641EDAA6EB06E1F6EE7 /* BackgroundEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7144945D1F1073E05840 /* BackgroundEventListener.swift */; };
+		AA4F79602034139C725CCF23 /* DeepLinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7567E75BB9D78A543CC7 /* DeepLinkListener.swift */; };
+		AA4F7A2BAFA5FA9477F43B05 /* BackgroundEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F79C1869ED058CADBDDF4 /* BackgroundEvent.swift */; };
 		AA4F7BEBDDA48F3C605FD74F /* UIFlowDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */; };
 		AA4F7F52E85AC80283A70CF3 /* LoginScreenDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F726254C19A198199E0A2 /* LoginScreenDependencyManager.swift */; };
 /* End PBXBuildFile section */
@@ -126,8 +129,11 @@
 		62B879A5264FE4620011CFCF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		6C624C26A7A6EB52AACA4A88 /* Pods-AppScreenNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigation.release.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigation/Pods-AppScreenNavigation.release.xcconfig"; sourceTree = "<group>"; };
 		7E9FE7AB4BD1BE2D55624222 /* Pods-AppScreenNavigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppScreenNavigationTests.debug.xcconfig"; path = "Target Support Files/Pods-AppScreenNavigationTests/Pods-AppScreenNavigationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4F7144945D1F1073E05840 /* BackgroundEventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundEventListener.swift; path = BackgroundEvents/BackgroundEventListener.swift; sourceTree = "<group>"; };
 		AA4F726254C19A198199E0A2 /* LoginScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenDependencyManager.swift; sourceTree = "<group>"; };
-		AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowDirector.swift; sourceTree = "<group>"; };
+		AA4F7478C48FD9800DB0E8A2 /* BackgroundEventReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundEventReducer.swift; path = BackgroundEvents/BackgroundEventReducer.swift; sourceTree = "<group>"; };
+		AA4F7567E75BB9D78A543CC7 /* DeepLinkListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepLinkListener.swift; path = BackgroundEvents/DeepLinkListener.swift; sourceTree = "<group>"; };
+		AA4F79C1869ED058CADBDDF4 /* BackgroundEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundEvent.swift; path = BackgroundEvents/BackgroundEvent.swift; sourceTree = "<group>"; };
 		AA4F7BCEF651EB95F18DCA31 /* SettingsScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreenDependencyManager.swift; sourceTree = "<group>"; };
 		AA4F7E9AE9B699B0859609CA /* ScheduleScreenDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleScreenDependencyManager.swift; sourceTree = "<group>"; };
 		AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowDependencyManager.swift; sourceTree = "<group>"; };
@@ -231,6 +237,10 @@
 				62B1DCC026503E760031898B /* Schedule */,
 				62B1DCBF26503E710031898B /* Login */,
 				62B1DCBE26503E6A0031898B /* Root */,
+				AA4F7144945D1F1073E05840 /* BackgroundEventListener.swift */,
+				AA4F7567E75BB9D78A543CC7 /* DeepLinkListener.swift */,
+				AA4F79C1869ED058CADBDDF4 /* BackgroundEvent.swift */,
+				AA4F7478C48FD9800DB0E8A2 /* BackgroundEventReducer.swift */,
 			);
 			path = StateMachine;
 			sourceTree = "<group>";
@@ -278,7 +288,6 @@
 				62056A3C2658ED6B008ADC7A /* UIFlowScreen.swift */,
 				62056A412658ED92008ADC7A /* UIFlowRouter.swift */,
 				62056A462658EDAA008ADC7A /* UIFlowStateMachine.swift */,
-				AA4F76607C55D4EAB7A433BF /* UIFlowDirector.swift */,
 				AA4F7F7839920F5F61E9477C /* UIFlowDependencyManager.swift */,
 			);
 			path = Root;
@@ -636,11 +645,14 @@
 				62B1DCEE2650485A0031898B /* LoginViewController2.swift in Sources */,
 				62B87987264FDCBE0011CFCF /* ScheduleViewController.swift in Sources */,
 				62865567264FB5B2007CDC76 /* LoginViewController.swift in Sources */,
-				AA4F7334C5B474CD16E561C8 /* UIFlowDirector.swift in Sources */,
 				AA4F7BEBDDA48F3C605FD74F /* UIFlowDependencyManager.swift in Sources */,
 				AA4F7F52E85AC80283A70CF3 /* LoginScreenDependencyManager.swift in Sources */,
 				AA4F7060D49B6436DBF1631E /* ScheduleScreenDependencyManager.swift in Sources */,
 				AA4F70E9170489FA57E40F88 /* SettingsScreenDependencyManager.swift in Sources */,
+				AA4F7641EDAA6EB06E1F6EE7 /* BackgroundEventListener.swift in Sources */,
+				AA4F79602034139C725CCF23 /* DeepLinkListener.swift in Sources */,
+				AA4F7A2BAFA5FA9477F43B05 /* BackgroundEvent.swift in Sources */,
+				AA4F738FB3F4C6FD62331365 /* BackgroundEventReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

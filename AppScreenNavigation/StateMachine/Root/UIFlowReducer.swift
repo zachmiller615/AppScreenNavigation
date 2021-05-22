@@ -17,18 +17,6 @@ struct UIFlowReducer {
     print("Event: \(event)")
     print("Current Screen: \(currentScreen)")
     print("Commands: \(commands)")
-    print("\n")
     return commands
-  }
-}
-
-struct BackgroundEventReducer {
-  static func transition(from backgroundEvent: BackgroundEvent) -> [UIFlowCommand] {
-    switch backgroundEvent {
-    case .didReceiveDeepLink:
-      let settingsModel = SettingsModel(chosenNumber: 3)
-      let settingsScreen = SettingsScreen(model: settingsModel)
-      return [.popToRoot, .present(settingsScreen)]
-    }
   }
 }

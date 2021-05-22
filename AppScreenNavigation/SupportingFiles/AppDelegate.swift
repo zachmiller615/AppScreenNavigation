@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }()
 
   // For state machine design pattern
-  private lazy var uiFlowDirector: UIFlowDirector = {
+  private lazy var uiFlowStateMachine: UIFlowStateMachine = {
     let window = UIWindow()
     self.window = window
-    return UIFlowDependencyManager().createUIFlowDirector(with: window)
+    return UIFlowDependencyManager().createUIFlowStateMachine(with: window)
   }()
 
   // MARK: - Methods
@@ -40,6 +40,6 @@ extension AppDelegate {
   }
 
   private func setupStateMachineDesignPattern() {
-    uiFlowDirector.start()
+    uiFlowStateMachine.start()
   }
 }

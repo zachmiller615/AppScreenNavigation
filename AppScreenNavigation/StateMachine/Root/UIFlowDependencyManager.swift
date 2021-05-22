@@ -1,12 +1,20 @@
 import UIKit
 
 struct UIFlowDependencyManager {
-  func createUIFlowDirector(with window: UIWindow) -> UIFlowDirector {
-    let stateMachine = createUIFlowStateMachine(with: window)
-    return UIFlowDirector(stateMachine: stateMachine)
+  func createUIFlowStateMachine(with window: UIWindow) -> UIFlowStateMachine {
+    let backgroundEventListener = createBackgroundEventListener()
+    return UIFlowStateMachine(window: window, backgroundEventListener: backgroundEventListener)
+  }
+}
+
+// MARK: - Private Methods
+extension UIFlowDependencyManager {
+  private func createBackgroundEventListener() -> BackgroundEventListener {
+    let deepLinkListener = DeepLinkListener()
+    return BackgroundEventListener(deepLinkListener: deepLinkListener)
   }
 
-  func createUIFlowStateMachine(with window: UIWindow) -> UIFlowStateMachine {
-    UIFlowStateMachine(window: window)
+  private func createDeepLinkListener() -> DeepLinkListener {
+    DeepLinkListener()
   }
 }
